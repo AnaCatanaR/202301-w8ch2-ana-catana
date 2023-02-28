@@ -1,6 +1,6 @@
 import { type ClientStructure, type ClientsStructure } from "./types";
 
-const getClientsByDni = (clients: ClientsStructure) => {
+const getClientsByDni = (clients: ClientsStructure): string[] => {
   const clientsWithPhoneNumber = clients.filter(
     (client: ClientStructure) => client.homePhone !== undefined
   );
